@@ -95,7 +95,13 @@ namespace Calc
             }
             else if (operacao == "DIVISÃO")
             {
+                if (valor2 == 0)
+                {
+                textBox.Text = "ERRO!!!";
+                }
+                else{
                 textBox.Text = Convert.ToString(valor1 / valor2);
+                }
             }
         }
 
